@@ -29,14 +29,14 @@ function column(board, numerColumn, titleColumn) {
 
   const formButtons = document.createElement('div');
   formButtons.classList.add('formButtons');
-  const buttonOk = document.createElement('div');
-  buttonOk.classList.add('buttonOk');
-  buttonOk.textContent = 'Ok';
-  formButtons.appendChild(buttonOk);
-  const buttonCancel = document.createElement('div'); // button.type = 'reset';
-  buttonCancel.classList.add('buttonCancel');
-  buttonCancel.textContent = 'отмена';
-  formButtons.appendChild(buttonCancel);
+  const buttonAdd = document.createElement('div');
+  buttonAdd.classList.add('buttonAdd');
+  buttonAdd.textContent = 'Add';
+  formButtons.appendChild(buttonAdd);
+  const buttonX = document.createElement('div'); // button.type = 'reset';
+  buttonX.classList.add('buttonX');
+  buttonX.textContent = 'X';
+  formButtons.appendChild(buttonX);
   formCart.appendChild(formButtons);
 
   divСolumn.appendChild(formCart);

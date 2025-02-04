@@ -60,9 +60,8 @@ div.block {
 
 
 
-.cart {
+/* .cart {
     position: relative;
-    /* display: block; */
     left: 0px;
     right: 0px;
     background-color: #ffffff;
@@ -71,7 +70,7 @@ div.block {
     width: auto;
     min-height: 15px;
 }
-/* тттттт */
+
 p.text {
     font-size: 10px;
     font-weight: 700;
@@ -88,7 +87,7 @@ p.text {
 
 
 .close {
-    float: right;     /* display: inline-block; */
+    float: right;
     padding: 2px 5px;
     background:#ccc;
     cursor: pointer;
@@ -99,10 +98,12 @@ p.text {
     position: absolute;
     z-index: 999;
     pointer-events: none;
-    /* background: #fff; */
-}
+} */
 
-/* lllllllllllllllllllllll */
+
+
+
+
 
 .form {
     /* display: none; */
@@ -113,6 +114,37 @@ p.text {
 }
 
 .formButtons {
-    /* position: relative; */
+    
     display: flex;
+}
+
+.inputText {
+    width: calc(100% - 8px);
+    min-height: 50px;
+}
+
+.buttonAdd {
+    width: 50px;
+    height: 20px;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    margin: 2px;
+    background: green;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonX {
+    width: 25px;
+    height: 20px;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    margin: 2px;
+    background: rgb(182, 39, 101);
+    text-align: center;
+    cursor: pointer;
+}
+
+.displayNone {
+    display: none;
 }
