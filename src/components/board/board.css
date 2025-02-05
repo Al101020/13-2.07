@@ -1,4 +1,3 @@
-
 div.board {
     display: flex;
     width: 650px;
@@ -13,12 +12,9 @@ div.board {
 
 .column {
     position: relative;
-    /* display: flex; */
     background-color: #d0cece;
     padding: 0px 5px;
     width: 200px;
-    /* min-height: auto;
-    max-height: 100% - 20px; */
 }
 
 .divСolumn1 {
@@ -44,8 +40,6 @@ p.addLink {
     cursor: pointer;
 }
 
-      /* #FFFFFF; */
-
 div.block {
     position: relative;
     width: 200px;
@@ -53,14 +47,10 @@ div.block {
     max-height: 350px;
     background-color: #d8d7d7;
     width: 100% - 10px;
-    overflow: auto;    /* border: 1px solid black; */    /* background-color: #FFFFFF; */
+    overflow: auto;
 }
 
-
-
-
-
-/* .cart {
+.cart {
     position: relative;
     left: 0px;
     right: 0px;
@@ -71,6 +61,16 @@ div.block {
     min-height: 15px;
 }
 
+.close {
+    float: right;
+    padding: 2px 5px;
+    background:#ccc;
+    cursor: pointer;
+}
+
+
+
+/* 
 p.text {
     font-size: 10px;
     font-weight: 700;

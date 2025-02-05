@@ -21,11 +21,12 @@ function column(board, numerColumn, titleColumn) {
 
   const formCart = document.createElement('form');
   formCart.classList.add('formCart');
+  formCart.classList.add('displayNone');
   const inputText = document.createElement('input');
   inputText.classList.add('inputText');
   inputText.type = 'text';
-  formCart.appendChild(inputText); // ---
-  // const buttonOk = document.createElement('button');   // button.type = 'submit';
+  inputText.setAttribute('placeholder', 'Введите текст...');
+  formCart.appendChild(inputText);
 
   const formButtons = document.createElement('div');
   formButtons.classList.add('formButtons');
@@ -33,7 +34,7 @@ function column(board, numerColumn, titleColumn) {
   buttonAdd.classList.add('buttonAdd');
   buttonAdd.textContent = 'Add';
   formButtons.appendChild(buttonAdd);
-  const buttonX = document.createElement('div'); // button.type = 'reset';
+  const buttonX = document.createElement('div');
   buttonX.classList.add('buttonX');
   buttonX.textContent = 'X';
   formButtons.appendChild(buttonX);
@@ -47,11 +48,9 @@ function column(board, numerColumn, titleColumn) {
 function createBoard() {
   const divBoard = document.createElement('div');
   divBoard.classList.add('board');
-
   column(divBoard, 1, 'TODO');
   column(divBoard, 2, 'IN PROGRESS');
   column(divBoard, 3, 'DONE');
-
   document.body.appendChild(divBoard);
 }
 
