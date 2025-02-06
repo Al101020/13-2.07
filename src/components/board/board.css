@@ -61,21 +61,25 @@ div.block {
     min-height: 15px;
 }
 
-.close {
+.divClose {
     float: right;
     padding: 2px 5px;
     background:#ccc;
     cursor: pointer;
 }
 
-
+p.text {
+    font-size: 12px;
+    /* font-weight: 700; */
+    font-weight: 400;
+    margin:10px 10px 10px 10px;
+    
+    /* pointer-events: none; */
+    white-space: pre-wrap;
+}
 
 /* 
-p.text {
-    font-size: 10px;
-    font-weight: 700;
-    margin:0px 0px 0px 0px;
-}
+
 
 .cart.dragged {
     border-radius: 10px;
